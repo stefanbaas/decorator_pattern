@@ -5,6 +5,11 @@ namespace App\Classes;
 class Computer implements \App\Contracts\Computer
 {
 
+    public function getName(): string
+    {
+        return "computer";
+    }
+
     public function getParts(): array
     {
         return [];
