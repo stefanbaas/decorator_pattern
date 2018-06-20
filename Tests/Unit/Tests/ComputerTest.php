@@ -21,17 +21,17 @@ class ComputerTest extends TestCase
         $this->assertNotNull($this->sut);
     }
 
-    public function testGetNameTest() : void
+    public function testGetName() : void
     {
         $this->assertTrue(is_string($this->sut->getName()));
     }
 
-    public function testGetPartsTest() : void
+    public function testGetParts() : void
     {
         $this->assertTrue(is_array($this->sut->getParts()));
     }
 
-    public function testGetCostTest() : void
+    public function testGetCost() : void
     {
         $this->assertTrue(is_float($this->sut->getCost()));
     }
