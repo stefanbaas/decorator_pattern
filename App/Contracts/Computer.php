@@ -4,6 +4,6 @@ namespace App\Contracts;
 
 interface Computer
 {
-    public function getParts() : string;
+    public function getParts() : array;
     public function getCost() : float;
 }

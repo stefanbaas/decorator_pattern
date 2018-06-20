@@ -14,8 +14,15 @@ class ComputerTest extends TestCase
         // You can only have one dependency, which is the sut.
         $this->sut = new Computer();
     }
+
     public function testInstantiation () : void
     {
         $this->assertNotNull($this->sut);
     }
+
+    public function testGetPartsTest() : void
+    {
+        $this->assertTrue(is_array($this->sut->getParts()));
+    }
+
 }
