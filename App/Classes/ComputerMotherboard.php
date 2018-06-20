@@ -18,7 +18,9 @@ class ComputerMotherboard implements \App\Contracts\Computer
 
     public function getParts(): array
     {
-        // TODO: Implement getParts() method.
+        $parts = $this->computer->getParts();
+        $parts[] = 'Motherboard';
+        return $parts;
     }
 
     public function getCost(): float

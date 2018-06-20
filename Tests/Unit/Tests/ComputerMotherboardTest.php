@@ -31,5 +31,9 @@ class ComputerMotherboardTest extends TestCase
         $this->assertTrue(is_string($this->sut->getName()));
     }
 
+    public function testGetPartsTest() : void
+    {
+        $this->assertTrue(is_array($this->sut->getParts()));
+    }
 
 }
