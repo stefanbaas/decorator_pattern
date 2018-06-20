@@ -8,6 +8,7 @@ use PHPUnit\Framework\TestCase;
 class ComputerTest extends TestCase
 {
     protected $sut; // System Under Test.
+
     protected function setUp()
     {
         parent::setUp();
