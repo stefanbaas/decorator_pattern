@@ -12,6 +12,6 @@ class Computer implements \App\Contracts\Computer
 
     public function getCost(): float
     {
-        // TODO: Implement getCost() method.
+        return 0.00;
     }
 }

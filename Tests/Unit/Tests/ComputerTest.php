@@ -25,4 +25,8 @@ class ComputerTest extends TestCase
         $this->assertTrue(is_array($this->sut->getParts()));
     }
 
+    public function testGetCostsest() : void
+    {
+        $this->assertTrue(is_float($this->sut->getCost()));
+    }
 }
