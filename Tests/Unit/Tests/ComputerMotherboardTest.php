@@ -36,4 +36,9 @@ class ComputerMotherboardTest extends TestCase
         $this->assertTrue(is_array($this->sut->getParts()));
     }
 
+    public function testGetCostTest() : void
+    {
+        $this->assertTrue(is_float($this->sut->getCost()));
+    }
+
 }

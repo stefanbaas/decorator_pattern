@@ -25,6 +25,9 @@ class ComputerMotherboard implements \App\Contracts\Computer
 
     public function getCost(): float
     {
-        // TODO: Implement getCost() method.
+        $cost = $this->computer->getCost();
+        $cost += 350;
+
+        return $cost;
     }
 }
