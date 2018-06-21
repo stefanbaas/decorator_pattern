@@ -7,7 +7,7 @@ class Computer implements \App\Contracts\Computer
 
     public function getName(): string
     {
-        return "computer";
+        return "Computer";
     }
 
     public function getParts(): array

@@ -2,24 +2,24 @@
 
 namespace App\Classes;
 
-class ComputerMotherboard extends ComputerDecorator
+class ComputerFloppyDrive extends ComputerDecorator
 {
     public function getName(): string
     {
-        return $this->computer->getName()." Motherboard";
+        return $this->computer->getName()." FloppyDrive";
     }
 
     public function getParts(): array
     {
         $parts = $this->computer->getParts();
-        $parts[] = 'Motherboard';
+        $parts[] = 'FloppyDrive';
         return $parts;
     }
 
     public function getCost(): float
     {
         $cost = $this->computer->getCost();
-        $cost += 350;
+        $cost += 100;
 
         return $cost;
     }

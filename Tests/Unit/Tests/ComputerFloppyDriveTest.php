@@ -4,10 +4,10 @@ namespace Tests;
 
 use App\Classes\Computer;
 use App\Classes\ComputerDecorator;
-use App\Classes\ComputerMotherboard;
+use App\Classes\ComputerFloppyDrive;
 use PHPUnit\Framework\TestCase;
 
-class ComputerMotherboardTest extends TestCase
+class ComputerFloppyDriveTest extends TestCase
 {
     protected $sut; // System Under Test.
 
@@ -19,15 +19,15 @@ class ComputerMotherboardTest extends TestCase
         $stub = $this->createMock(Computer::class);
 
         // You can only have one dependency, which is the sut.
-        $this->sut = new ComputerMotherboard($stub);
+        $this->sut = new ComputerFloppyDrive($stub);
     }
 
-    public function testInstantiation () : void
+    public function testInstantiation(): void
     {
         $this->assertNotNull($this->sut);
     }
 
-    public function testInstanceOf() : void
+    public function testInstanceOff() : void
     {
         $this->assertInstanceOf(ComputerDecorator::class, $this->sut);
     }
@@ -46,5 +46,4 @@ class ComputerMotherboardTest extends TestCase
     {
         $this->assertTrue(is_float($this->sut->getCost()));
     }
-
 }
